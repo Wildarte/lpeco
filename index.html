@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap-icons-1.8.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="content_header container">
+            <div class="top_header">
+                <img src="assets/img/logo.png" alt="">
+                <div class="header_menu">
+                    <p>
+                        Menu
+                        <div class="btn_menu">
+                            <span id="rec"></span>
+                            <span id="rec"></span>
+                            <span id="rec"></span>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom_header">
+                <p>Conheça Bonito e descubra os encantos do</p>
+                <h1>Paraíso ecológico mais exclusivo do Brasil</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section_imgs">
+            <div class="content_imgs container">
+                <div class="imgs_left">
+                    <h2>
+                        Um verdadeiro paraíso em todos os sentidos
+                    </h2>
+
+                    <p>Imagina mergulhar em uma das águas doces mais cristalinas do mundo, sentir a sensação de ar puro enquanto contempla a natureza a sua volta e ainda apreciar uma comida deliciosamente marcante.
+                    </p>
+
+                    <p>Em Bonito (MS), você vai conhecer a natureza na mais perfeita harmonia, onde os animais e as plantas fazem um contraste único, para você registrar fotos dos momentos magníficos que ficarão em sua memória. 
+                    </p>
+
+                    <p>O melhor destino de ecoturismo do Brasil está de braços abertos para te receber e te proporcionar sensações incríveis.</p>
+                </div>
+
+                <div class="imgs_right">
+                    <div class="imgs_right_row">
+                        <div class="card_imgs">
+                            <img src="assets/img/ba1.png" alt="">
+                            <p>Fauna</p>
+                        </div>
+                        <div class="card_imgs">
+                            <img src="assets/img/ba2.png" alt="">
+                            <p>Culinária</p>
+                        </div>
+                    </div>
+
+                    <div class="imgs_right_row">
+                        <div class="card_imgs">
+                            <img src="assets/img/ba3.png" alt="">
+                            <p>Flora</p>
+                        </div>
+                        <div class="card_imgs">
+                            <img src="assets/img/ba4.png" alt="">
+                            <p>Natureza</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="imgs_bottom container">
+                <h2>O que fazer em Bonito</h2>
+
+                <p>Você poderá escolher desde os passeios mais exclusivos, como as Flutuações de água doce, que é reconhecida como uma das três águas mais cristalinas do mundo. São verdadeiros aquários naturais para você flutuar e ter contato com lindos peixes, diferentes animais e vegetação subaquática. Ou até mesmo realizar trilhas, conhecer grutas históricas e ainda se aventurar no Pantanal. São mais de 40 passeios encantadores, com um único objetivo: Fazer você criar memórias inesquecíveis ao lado de quem você mais gosta. </p>
+            </div>
+        </section>
+
+        <section class="section_imgs_box">
+            <section class="content_imgs_box">
+                <div class="close_modal" onclick="closeModal()">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <article class="card_img_box">
+                    <img src="assets/img/feat1.png" onclick="openModal(1)" alt="">
+                    <button>Cachoeiras</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat2.png" onclick="openModal(2)" alt="">
+                    <button>Mergulho</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat3.png" onclick="openModal(3)" alt="">
+                    <button>Flutuação</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat4.png" onclick="openModal(4)" alt="">
+                    <button>Balneário</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat5.png" onclick="openModal(5)" alt="">
+                    <button>Grutas</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat6.png" onclick="openModal(6)" alt="">
+                    <button>Aventura</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat7.png" onclick="openModal(7)" alt="">
+                    <button>Pantanal</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat8.png" onclick="openModal(8)" alt="">
+                    <button>Urbano</button>
+                </article>
+            </section>
+
+            <div class="control_modal_one">
+                <div class="btn_prev" data-prev-card="" onclick="moveCard(-1)">
+                    <i class="bi bi-caret-left"></i>
+                </div>
+                <div class="btn_next" data-next-card="" onclick="moveCard(1)">
+                    <i class="bi bi-caret-right"></i>
+                </div>
+            </div>
+            
+        </section>
+
+        <section>
+            <div>
+                <div>
+                    <header>
+                        <h3>Como a viagem com a </h3>
+                    </header>
+
+                    <div>
+
+                    </div>
+
+                    <div>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        
+                        <div>
+                            <header>
+                                <h4></h4>
+                            </header>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, voluptates voluptas, natus ullam possimus suscipit nulla quo at, pariatur voluptate temporibus quae quia. Asperiores sed eius quos, nemo repellendus reprehenderit.</p>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt modi maiores vitae, consectetur itaque pariatur reprehenderit eligendi atque sit laudantium quas, quasi excepturi cupiditate, nobis dolor asperiores officia debitis. Vitae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div>
+                    <header>
+                        <h3>Mande seu </h3>
+                    </header>
+                    
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate alias officia illo quam ullam minus, vero optio excepturi reprehenderit cum et temporibus deleniti recusandae quis veritatis corrupti modi quaerat reiciendis.</p>
+
+                    <section>
+
+                        <article>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                            <div>
+                                <h4>Título</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eaque quisquam explicabo at magnam recusandae repellat nihil consectetur soluta!</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                            <div>
+                                <h4>Título</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eaque quisquam explicabo at magnam recusandae repellat nihil consectetur soluta!</p>
+                            </div>
+                        </article>
+
+                    </section>
+                </div>
+
+                <div>
+                    <form action="">
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <section>
+                    <header>
+                        <h3>Conheça os nossos</h3>
+                    </header>
+
+                    <section>
+                        <article>
+                            <img src="" alt="">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, inventore?</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <div>
+                                    <p>Lorem, ipsum dolor.</p>
+                                    <p>93,20</p>
+
+                                    <p>Lorem, ipsum dolor.</p>
+                                    <p>Lorem, ipsum dolor.</p>
+                                </div>
+                                <button>
+
+                                </button>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="" alt="">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, inventore?</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <div>
+                                    <p>Lorem, ipsum dolor.</p>
+                                    <p>93,20</p>
+
+                                    <p>Lorem, ipsum dolor.</p>
+                                    <p>Lorem, ipsum dolor.</p>
+                                </div>
+                                <button>
+                                    
+                                </button>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="" alt="">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, inventore?</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <div>
+                                    <p>Lorem, ipsum dolor.</p>
+                                    <p>93,20</p>
+
+                                    <p>Lorem, ipsum dolor.</p>
+                                    <p>Lorem, ipsum dolor.</p>
+                                </div>
+                                <button>
+                                    
+                                </button>
+                            </div>
+                        </article>
+                    </section>
+
+                    <div>
+                        <img src="" alt="">
+                    </div>
+
+                </section>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div>
+                    <h3>Nossas atualizações</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    
+</body>
+</html>
