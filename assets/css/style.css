@@ -1,6 +1,8 @@
 :root{
     --color-main: ;
     --color-blue: #6394F6;
+    --color-dargk-green: #00453E;
+    --color-yellow: #F1B22B;
 }
 
 
@@ -290,7 +292,6 @@ header.header{
 }
 
 .section_form{
-    padding: 100px 0;
     background-image: url('../img/bg_form.png');
     background-position: center;
     background-size: cover;
@@ -305,6 +306,7 @@ header.header{
 .section_form_info{
     flex-basis: 55%;
     padding: 10px;
+    padding: 100px 0;
 }
 .section_form_header{
     width: 100%;
@@ -349,3 +351,245 @@ p.text_info_form{
 .card_section_content p{
     font-weight: 400;
 }
+
+
+
+/* form */
+.form{
+    flex-basis: 45%;
+    display: flex;
+    position: relative;
+}
+form.m_form{
+    width: 90%;
+    margin: auto;
+    height: 120%;
+    padding: 50px;
+    border-radius: 40px;
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    z-index: 10;
+    background-color: var(--color-dargk-green);
+    display: flex;
+    flex-wrap: wrap;
+}
+form.m_form h4{
+    font-size: 1.8em;
+    font-weight: 400;
+    text-align: center;
+}
+.form_row{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 10px 0;
+}
+.form_field{
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    position: relative;
+    padding: 4px;
+}
+.form_field label{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: var(--color-dargk-green);
+    padding: 0 10px;
+}
+.form_field input{
+    padding: 5px;
+    font-size: 1.1em;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    width: 100%;
+}
+.w-30{
+    width: calc(30% - 5px);
+}
+.w-70{
+    width: calc(70% - 5px);
+}
+.w-50{
+    width: calc(50% - 5px);
+}
+.select_form_group{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.select_form_column{
+    flex-basis: 50%;
+}
+.select_form_column input{
+    margin-right: 10px;
+}
+.select_form_column p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.btn_submit_form{
+    width: 100%;
+    background-color: var(--color-yellow);
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.select_form_group p.title_select{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+.cod_country{
+    display: flex;
+}
+.cod_country img{
+    width: 45%;
+    padding: 6px;
+}
+.cod_country input{
+    width: 55%;
+}
+/* form */
+
+
+
+.ssection_packs{
+background-color: #eeeeee;
+}
+
+.packs_content{
+    padding: 100px 10px 80px;
+}
+.packs_values{
+    display: block;
+    padding: 80px 0 40px;
+}
+.packs_values .header_packs{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.header_packs h3{
+    font-size: 2em;
+    font-weight: 400;
+    color: #222;    
+}
+.container_packs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card_packs{
+    flex-basis: calc(33.33% - 40px);
+    margin: 10px;
+    box-shadow: 2px 2px 10px #999;
+    border-radius: 10px;
+}
+.card_packs img{
+    width: 100%;
+}
+.card_pack_info{
+    padding: 20px;
+    color: #444;
+}
+.card_pack_title{
+    font-size: 1.4em;
+}
+.card_pack_subtitle{
+    font-size: 1em;
+}
+.card_pack_price{
+    margin: 20px 0;
+    text-align: left;
+}
+.card_pack_value{
+    font-size: 2.2em;
+    margin: 10px 0;
+}
+.btn_card_pack{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #222;
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px;
+    font-size: 1.3em;
+    font-weight: 600;
+    background-color: var(--color-yellow);
+    border: none;
+    border-radius: 10px;
+}
+.packes_banner{
+    position: relative;
+    color: #fff;
+    margin-top: 100px;
+}
+.packes_banner img{
+    width: 100%;
+}
+.packes_banner h4{
+    position: absolute;
+    left: 80px;
+    bottom: 120px;
+    font-size: 3em;
+    font-weight: 300;
+}
+.packes_banner p{
+    font-size: 1.2em;
+    position: absolute;
+    left: 80px;
+    bottom: 80px;
+    font-weight: 300;
+}
+
+
+/* reviews */
+.section_reviews{
+    background-color: #fff;
+}
+.content_reviews{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 10px;
+}
+.reviews_left{
+    flex-basis: 30%;
+    padding: 40px 0;
+}
+.reviews_right{
+    flex-basis: 70%;
+    display: flex;
+}
+.reviews_left h3{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.reviews_right .item_review{
+    flex-basis: calc(25% - 20px);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.item_review p{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+}
+.item_review img{
+    width: 100%;
+}
+/* reviews */

@@ -229,93 +229,169 @@
                             </div>
                         </div>
                         <div class="form_row">
-                            
+                            <div class="form_field w-30">
+                                <label for="pais">País</label>
+                                <div class="cod_country">
+                                    <img src="assets/img/brasil_flag.png" alt="">
+                                    <input type="text" name="cod_pais" id="cod_pais" value="+55">
+                                </div>
+                            </div>
+                            <div class="form_field w-70">
+                                <label for="celular">Celular</label>
+                                <input type="text" name="celular" id="celular" maxlength="15"/>
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div class="form_field w-50">
+                                <label for="checkin">Check-In</label>
+                                <input type="text" name="checkin" id="checkin">
+                            </div>
+                            <div class="form_field w-50">
+                                <label for="checkout">Check-Out</label>
+                                <input type="text" name="checkout" id="checkout">
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div class="form_field w-50">
+                                <label for="adultos">Adultos</label>
+                                <input type="text" name="adultos" id="adultos">
+                            </div>
+                            <div class="form_field w-50">
+                                <label for="criancas">Crianças</label>
+                                <input type="text" name="criancas" id="criancas">
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div class="form_field">
+                                <label for="idade_criancas">Idade das Crianças</label>
+                                <input type="text" name="idade_criancas" id="idade_criancas">
+                            </div>
+                        </div>
+                        <div class="form_row">
+                           
+                            <div class="select_form_group">
+                                <p class="title_select">Quais são os passeios de interesse?</p>
+                                <div class="select_form_column">
+                                    <p><input type="checkbox" name="passeios" id="passeios" value="cachoeira">Cachoeira</p>
+                                    <p><input type="checkbox" name="passeios" id="passeios" value="mergulho">Mergulho</p>
+                                    <p><input type="checkbox" name="passeios" id="passeios" value="flutuação">Flutuação</p>
+                                    <p><input type="checkbox" name="passeios" id="passeios" value="balneario">Balneário</p>
+                                </div>
+
+                                <div class="select_form_column">
+                                    <p><input type="checkbox" name="passeios" id="passeios" value="grutas">Grutas</p>
+                                    <p><input type="checkbox" name="passeios" id="passeios" value="aventura">Aventura</p>
+                                    <p><input type="checkbox" name="passeios" id="passeios" value="pantanal">Pantanal</p>
+                                    <p><input type="checkbox" name="passeios" id="passeios" value="urbano">Urbano</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <button class="btn_submit_form" type="submit">Quero receber meu pacote</button>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div>
-                <section>
-                    <header>
-                        <h3>Conheça os nossos</h3>
+        <section class="ssection_packs">
+            <div class="packs_content container">
+                <section class="packs_values">
+                    <header class="header_packs">
+                        <h3>Conheça os nossos pacotes temáticos</h3>
                     </header>
 
-                    <section>
-                        <article>
-                            <img src="" alt="">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, inventore?</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <div>
-                                    <p>Lorem, ipsum dolor.</p>
-                                    <p>93,20</p>
+                    <section class="container_packs">
+                        <article class="card_packs">
+                            <img src="assets/img/card_one.png" alt="">
+                            <div class="card_pack_info">
+                                <p class="card_pack_title">Bonito Romântico - 6 dias</p>
+                                <p class="card_pack_subtitle">Aéreo + Hospedagem</p>
+                                <div class="card_pack_price">
+                                    <p>A partir de 10x de</p>
+                                    <p class="card_pack_value">93,20</p>
 
-                                    <p>Lorem, ipsum dolor.</p>
-                                    <p>Lorem, ipsum dolor.</p>
+                                    <p>ou 932,00 à vista</p>
+                                    <p>(preço por pessoa)</p>
                                 </div>
-                                <button>
-
-                                </button>
+                                <a href="#" class="btn_card_pack">
+                                    Quero comprar
+                                </a>
                             </div>
                         </article>
-                        <article>
-                            <img src="" alt="">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, inventore?</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <div>
-                                    <p>Lorem, ipsum dolor.</p>
-                                    <p>93,20</p>
 
-                                    <p>Lorem, ipsum dolor.</p>
-                                    <p>Lorem, ipsum dolor.</p>
+                        <article class="card_packs">
+                            <img src="assets/img/card_two.png" alt="">
+                            <div class="card_pack_info">
+                                <p class="card_pack_title">Bonito Aventura - 6 dias</p>
+                                <p class="card_pack_subtitle">Aéreo + Hospedagem</p>
+                                <div class="card_pack_price">
+                                    <p>A partir de 10x de</p>
+                                    <p class="card_pack_value">102,10</p>
+
+                                    <p>ou 932,00 à vista</p>
+                                    <p>(preço por pessoa)</p>
                                 </div>
-                                <button>
-                                    
-                                </button>
+                                <a href="#" class="btn_card_pack">
+                                    Quero comprar
+                                </a>
                             </div>
                         </article>
-                        <article>
-                            <img src="" alt="">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, inventore?</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <div>
-                                    <p>Lorem, ipsum dolor.</p>
-                                    <p>93,20</p>
 
-                                    <p>Lorem, ipsum dolor.</p>
-                                    <p>Lorem, ipsum dolor.</p>
+                        <article class="card_packs">
+                            <img src="assets/img/card_three.png" alt="">
+                            <div class="card_pack_info">
+                                <p class="card_pack_title">Bonito Passeio - 6 dias</p>
+                                <p class="card_pack_subtitle">Aéreo + Hospedagem</p>
+                                <div class="card_pack_price">
+                                    <p>A partir de 10x de</p>
+                                    <p class="card_pack_value">76,80</p>
+
+                                    <p>ou 932,00 à vista</p>
+                                    <p>(preço por pessoa)</p>
                                 </div>
-                                <button>
-                                    
-                                </button>
+                                <a href="#" class="btn_card_pack">
+                                    Quero comprar
+                                </a>
                             </div>
                         </article>
+                        
+                       
                     </section>
 
-                    <div>
-                        <img src="" alt="">
+                    <div class="packes_banner container">
+                        <img src="assets/img/banner2.png" alt="">
+                        <h4>Apaixonante</h4>
+                        <p>Bonito. Um dos lugares mais lindos e encantadores do mundo.</p>                        
                     </div>
 
                 </section>
             </div>
         </section>
 
-        <section>
-            <div>
-                <div>
-                    <h3>Nossas atualizações</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <section class="section_reviews">
+            <div class="content_reviews container">
+                <div class="reviews_left">
+                    <h3>Nossas Avaliações</h3>
+                    <p>Somos uma das maiores avaliações para Bonito</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div class="reviews_right">
+                    <div class="item_review">
+                        <img src="assets/img/review-1.png" alt="">
+                    </div>
+                    <div class="item_review">
+                        <p>4,5</p>
+                        <img src="assets/img/review-2.png" alt="">
+                    </div>
+                    <div class="item_review">
+                        <p>4,7</p>
+                        <img src="assets/img/review-3.png" alt="">
+                    </div>
+                    <div class="item_review">
+                        <p>4,8</p>
+                        <img src="assets/img/review-4.png" alt="">
+                    </div>
+                    
                 </div>
             </div>
         </section>
