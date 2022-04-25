@@ -292,7 +292,7 @@ header.header{
 }
 
 .section_form{
-    background-image: url('../img/bg_form.png');
+    background-image: url('../img/bg_form.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -593,3 +593,332 @@ background-color: #eeeeee;
     width: 100%;
 }
 /* reviews */
+
+
+
+/* footer */
+footer.footer{
+    padding: 80px 0;
+    background-image: url('../img/bg_footer.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.board_footer{
+    margin: 10px;
+    padding: 80px 80px 40px 80px;
+    background-color: rgba(10, 10, 10, .85);
+    color: #fff;
+}
+.board_footer h5{
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.board_footer p{
+    font-size: 1em;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.board_footer_top{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_logo, .footer_pag{
+    flex-basis: 20%;
+}
+.footer_logo{
+    padding: 20px;
+}
+.footer_pag img{
+    width: 100%;
+}
+.info_footer{
+    flex-basis: 60%;
+}
+.footer_logo img{
+    width: 60%;
+}
+.board_footer_bottom{
+    display: flex;
+    align-items: flex-start;
+    border-top: 1px solid #999;
+    padding-top: 20px;
+}
+.board_footer_bottom_left, .board_footer_bottom_right{
+    width: 50%;
+}
+.board_footer_bottom_right{
+    display: flex;
+    justify-content: flex-end;
+}
+.board_footer_bottom_right img{
+    width: 150px;
+    height: auto;
+}
+/* footer */
+
+
+
+@media(max-width: 980px){
+    .imgs_left, .imgs_right{
+        flex-basis: 100%;
+    }
+    .imgs_right .imgs_right_row{
+        display: flex;
+        justify-content: center;
+    }
+    .imgs_right_row .card_imgs{
+    }
+    .imgs_right .imgs_right_row .card_imgs:nth-child(2){
+        position: unset;
+    }
+    .card_imgs p{
+        position: unset;
+        margin-top: -40px;
+    }
+    .viagem_steps ul.list_steps_viagem{
+        overflow: auto;
+    }
+}
+
+
+@media(max-width: 768px){
+    .bottom_header h1{
+        width: 80%;
+    }
+    .imgs_left, .imgs_right{
+        padding: 40px 10px;
+    }
+    .imgs_bottom p{
+        width: 100%;
+    }
+    .card_img_box button{
+        font-size: 1.1em;
+        padding: 8px 15px;
+    }
+    .viagem_header p{
+        width: 100%;
+    }
+    .steps_mapa{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .content_steps_text{
+        flex-basis: 100%;
+    }
+    .steps_mapa img{
+        width: 60%;
+        margin: auto;
+    }
+    .section_form_info, .form{
+        flex-basis: 100%;
+    }
+    .section_form_info{
+        padding: 80px 10px 40px;
+    }
+    .form{
+        padding: 0px 10px 80px;
+    }
+    form.m_form{
+        position: unset;
+        height: 100%;
+    }
+    .card_section_form{
+        margin: 40px auto;
+    }
+    .section_form_header h3{
+        text-align: center;
+    }
+    .container_packs{
+        width: 100%;
+    }
+    .card_packs{
+        flex-basis: calc(100% - 40px);
+        margin: 10px auto;
+    }
+
+    .footer_logo{
+        flex-basis: 30%;
+    }
+    .info_footer{
+        flex-basis: 70%;
+    }
+    .footer_pag{
+        flex-basis: 100%;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    .footer_pag img{
+        max-width: 300px;
+    }
+    .frame_modal .card_active img{
+        width: 100%!important;
+        height: auto!important;
+        margin: auto;
+    }
+    .frame_modal .card_img_box{
+        margin: auto;
+        top: 80px;
+    }
+}
+
+
+@media(max-width: 600px){
+    header.header{
+        min-height: 480px;
+    }
+    .content_header{
+        height: 480px;
+    }
+    .bottom_header{
+        padding-top: 100px;
+    }
+    .bottom_header p{
+        font-size: 1.3em;
+    }
+    .bottom_header h1{
+        font-size: 1.6em;
+        margin-top: 10px;
+    }
+    .section_imgs{
+        padding: 20px 0 40px;
+    }
+    .imgs_left h2{
+        font-size: 1.8em;
+    }
+    .imgs_left p{
+        font-size: 1em;
+    }
+    .imgs_right_row .card_imgs{
+        max-width: 180px;
+    }
+    .imgs_right .imgs_right_row{
+
+    }
+    .imgs_right .imgs_right_row .card_imgs:nth-child(2){
+        margin-top: unset;
+        margin-left: unset;
+        margin: 10px;
+        margin-top: 10px;
+        position: relative;
+        right: 0px
+    }
+    .imgs_right .imgs_right_row:nth-child(even) .card_imgs:nth-child(2){
+        right: 0px;
+    }
+    .card_img_box button{
+        display: none;
+    }
+    .card_img_box{
+        flex-basis: 33.33%;
+    }
+    .card_img_box:nth-child(8), .card_img_box:nth-child(9){
+        flex-basis: 50%;
+    }
+    .imgs_right_row .card_imgs{
+        max-width: 140px;
+    }
+    .imgs_right{
+        padding: 0px 0px 40px;
+    }
+    .imgs_bottom{
+        margin-top: 40px;
+    }
+    .board_viagem{
+        padding: 15px;
+    }
+    .content_steps_text{
+        padding: 0;
+    }
+    .card_section_form{
+        width: 100%;
+        padding: 10px;
+    }
+    .card_section_form_img img{
+        width: 100%;
+    }
+    .section_form_content{
+        padding: 10px 10px 40px;
+    }
+    p.text_info_form{
+        font-size: 1em;
+    }
+    .viagem_header h3{
+        font-size: 1.5em;
+    }
+    form.m_form h4{
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    .form{
+        padding: 0;
+    }
+    form.m_form{
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .btn_submit_form{
+        padding: 10px;
+    }
+    .packs_content{
+        padding: 40px 10px;
+    }
+    .packs_values{
+        padding: 40px 0;
+    }
+    .header_packs h3{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .btn_card_pack{
+        font-size: 1.2em;
+    }
+    .packes_banner h4{
+        font-size: 1.4em;
+        left: 10px;
+        bottom: 60px;
+    }
+    .packes_banner p{
+        font-size: .9em;
+        left: 10px;
+        bottom: 20px;
+        width: 90%;
+    }
+    .reviews_left, .reviews_right{
+        flex-basis: 100%;
+    }
+    .item_review p{
+        font-size: 1.5em;
+    }
+    .board_footer{
+        padding: 10px;
+    }
+    .footer_logo{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .footer_logo img{
+        width: 40%;
+    }
+    .info_footer{
+        flex-basis: 100%;
+    }
+    .board_footer_bottom{
+        flex-wrap: wrap;
+    }
+    .board_footer_bottom_left, .board_footer_bottom_right{
+        width: 100%;
+    }
+    .board_footer_bottom_right{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 420px){
+    .imgs_right_row .card_imgs{
+        max-width: 110px;
+    }
+}

@@ -21,3 +21,14 @@ window.onload = function(){
 		mascara( this, mtel );
 	}
 }
+
+
+if(window.matchMedia('(max-width: 600px)').matches){
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+    });
+}
+
+document.addEventListener('screen', function(){
+
+});

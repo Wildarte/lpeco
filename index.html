@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/bootstrap-icons-1.8.1/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -88,7 +90,7 @@
         </section>
 
         <section class="section_imgs_box">
-            <section class="content_imgs_box">
+            <section class="content_imgs_box .owl-carousel">
                 <div class="close_modal" onclick="closeModal()">
                     <i class="bi bi-x-lg"></i>
                 </div>
@@ -360,7 +362,7 @@
                     </section>
 
                     <div class="packes_banner container">
-                        <img src="assets/img/banner2.png" alt="">
+                        <img src="assets/img/banner2.jpg" alt="">
                         <h4>Apaixonante</h4>
                         <p>Bonito. Um dos lugares mais lindos e encantadores do mundo.</p>                        
                     </div>
@@ -406,14 +408,50 @@
 
     </main>
 
-    <footer>
-        <div>
-            
+
+    <footer class="footer">
+        <div class="footer_content container">
+            <div class="board_footer">
+                <div class="board_footer_top">
+                    <div class="footer_logo">
+                        <img src="assets/img/logo.png" alt="">
+                    </div>
+    
+                    <div class="info_footer">
+                        <h5>Onde Estamos</h5>
+    
+                        <p>R. Cel. Pilad Rebuá, 1853 Centro - Bonito/MS</p>
+    
+                        <h5>Horário de Atendimento</h5>
+    
+                        <p>Segunda a Domingo das 07h00 às 19h00 e nosso fuso horário é 1 hora a menos que Brasília</p>
+    
+                    </div>
+    
+                    <div class="footer_pag">
+                        <h5>Formas de Pagamento</h5>
+                        <img src="assets/img/pag.png" alt="">
+                        <p>Parcelamos em até 12x sem juros</p>
+                    </div>
+                </div>
+                <div class="board_footer_bottom">
+                    <div class="board_footer_bottom_left">
+                        <p>@ 2021 - Ygarapé Tour - Todos os direitos reservados</p>
+                        <h5>CNPJ 86.744.935/0001-06</h5>
+                    </div>
+                    <div class="board_footer_bottom_right">
+                        <img src="assets/img/img_footer.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    
 
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     
 </body>
 </html>
