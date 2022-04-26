@@ -32,3 +32,27 @@ if(window.matchMedia('(max-width: 600px)').matches){
 document.addEventListener('screen', function(){
 
 });
+
+const clickItemStep = document.querySelectorAll('.viagem_steps ul.list_steps_viagem li');
+const itemStep = document.querySelectorAll('.content_steps');
+
+clickItemStep.forEach((item, index) => {
+
+    item.addEventListener('click', function(){
+
+        itemStep.forEach((item) => {
+            item.classList.remove('content_steps_actived');
+        })
+        itemStep[index].classList.add('content_steps_actived');
+
+        clickItemStep.forEach((item) => {
+
+            item.classList.remove('list_steps_viagem_actived');
+    
+        });
+    
+        clickItemStep[index].classList.add('list_steps_viagem_actived');
+
+    });
+
+});

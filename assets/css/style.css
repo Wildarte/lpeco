@@ -258,9 +258,23 @@ header.header{
     background-color: #e4e4e4;
 }
 .content_steps{
-    display: flex;
+    display: none;
+    opacity: 0;
     flex-wrap: wrap;
     padding: 40px 0 20px;
+    transition: all .3s;
+}
+.content_steps_actived{
+    display: flex;
+    animation: openItem .6s forwards;
+}
+@keyframes openItem{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .steps_mapa{
     flex-basis: 30%;
