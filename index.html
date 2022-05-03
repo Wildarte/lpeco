@@ -7,17 +7,33 @@
     <title>Site</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/bootstrap-icons-1.8.1/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/light.css">
+    
+   
+    <style>
+        @media(max-width: 1210px){
+            .f-row-var{
+                flex-basis: 100%;
+            }
+            .f-one{
+                margin-bottom: 20px;
+            }
+            .f-two{
+                margin-top: 20px;
+            }
+        }
+    </style>
+
 </head>
 <body>
 
-    <header class="header">
+    <header class="header" id="home">
         <div class="content_header container">
             <div class="top_header">
                 <img src="assets/img/logo.png" alt="">
@@ -30,7 +46,16 @@
                             <span id="rec"></span>
                         </div>
                     </p>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#oquefazer">O que fazer</a></li>
+                            <li><a href="#roteiro">Roteiro personalizado</a></li>
+                            <li><a href="#reserve">Reserve já</a></li>
+                        </ul>
+                    </nav>
                 </div>
+                
             </div>
             <div class="bottom_header">
                 <p>Conheça Bonito e descubra os encantos do</p>
@@ -81,8 +106,25 @@
                     </div>
                    
                 </div>
+                
+                <div class="owl-carousel owl-theme imgs_right_mobile">
+                    <div class="item">
+                        <img src="assets/img/ba1.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/ba2.png" alt="">
+                    </div> 
+                    <div class="item">
+                        <img src="assets/img/ba3.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/ba4.png" alt="">
+                    </div>
+                </div>
+                
             </div>
-            <div class="imgs_bottom container">
+            <div class="imgs_bottom container" id="oquefazer">
+
                 <h2>O que fazer em Bonito</h2>
 
                 <p>Você poderá escolher desde os passeios mais exclusivos, como as Flutuações de água doce, que é reconhecida como uma das três águas mais cristalinas do mundo. São verdadeiros aquários naturais para você flutuar e ter contato com lindos peixes, diferentes animais e vegetação subaquática. Ou até mesmo realizar trilhas, conhecer grutas históricas e ainda se aventurar no Pantanal. São mais de 40 passeios encantadores, com um único objetivo: Fazer você criar memórias inesquecíveis ao lado de quem você mais gosta. </p>
@@ -90,45 +132,45 @@
         </section>
 
         <section class="section_imgs_box">
-            <section class="content_imgs_box .owl-carousel">
-                <div class="close_modal" onclick="closeModal()">
-                    <i class="bi bi-x-lg"></i>
-                </div>
+            
+            <section class="content_imgs_box ">
+                
                 <article class="card_img_box">
-                    <img src="assets/img/feat1.png" onclick="openModal(1)" alt="">
+                    <img src="assets/img/feat1.jpg" alt="">
                     <button>Cachoeiras</button>
                 </article>
                 <article class="card_img_box">
-                    <img src="assets/img/feat2.png" onclick="openModal(2)" alt="">
+                    <img src="assets/img/feat2.jpg" alt="">
                     <button>Mergulho</button>
                 </article>
                 <article class="card_img_box">
-                    <img src="assets/img/feat3.png" onclick="openModal(3)" alt="">
+                    <img src="assets/img/feat3.jpg" alt="">
                     <button>Flutuação</button>
                 </article>
                 <article class="card_img_box">
-                    <img src="assets/img/feat4.png" onclick="openModal(4)" alt="">
+                    <img src="assets/img/feat4.jpg" alt="">
                     <button>Balneário</button>
                 </article>
                 <article class="card_img_box">
-                    <img src="assets/img/feat5.png" onclick="openModal(5)" alt="">
+                    <img src="assets/img/feat5.jpg" alt="">
                     <button>Grutas</button>
                 </article>
                 <article class="card_img_box">
-                    <img src="assets/img/feat6.png" onclick="openModal(6)" alt="">
+                    <img src="assets/img/feat6.jpg" alt="">
                     <button>Aventura</button>
                 </article>
                 <article class="card_img_box">
-                    <img src="assets/img/feat7.png" onclick="openModal(7)" alt="">
+                    <img src="assets/img/feat7.jpg" alt="">
                     <button>Pantanal</button>
                 </article>
                 <article class="card_img_box">
-                    <img src="assets/img/feat8.png" onclick="openModal(8)" alt="">
+                    <img src="assets/img/feat8.jpg" alt="">
                     <button>Urbano</button>
                 </article>
             </section>
 
-            <div class="control_modal_one">
+            <!-- 
+            <div class="control_modal_one" style="display: flex;">
                 <div class="btn_prev" data-prev-card="" onclick="moveCard(-1)">
                     <i class="bi bi-caret-left"></i>
                 </div>
@@ -136,7 +178,59 @@
                     <i class="bi bi-caret-right"></i>
                 </div>
             </div>
-            
+             -->
+        </section>
+
+        <section class="section_imgs_box2 ">
+            <div class="close_modal2" style="display: none;" onclick="closeModal()">
+                <i class="bi bi-x-lg"></i>
+            </div>
+            <section class="content_imgs_box2 owl-carousel owl-theme">
+                
+                <article class="card_img_box">
+                    <img src="assets/img/feat1.jpg" alt="">
+                    <button>Cachoeiras</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat2.jpg" alt="">
+                    <button>Mergulho</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat3.jpg" alt="">
+                    <button>Flutuação</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat4.jpg" alt="">
+                    <button>Balneário</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat5.jpg" alt="">
+                    <button>Grutas</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat6.jpg" alt="">
+                    <button>Aventura</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat7.jpg" alt="">
+                    <button>Pantanal</button>
+                </article>
+                <article class="card_img_box">
+                    <img src="assets/img/feat8.jpg" alt="">
+                    <button>Urbano</button>
+                </article>
+            </section>
+
+            <!-- 
+            <div class="control_modal_one" style="display: flex;">
+                <div class="btn_prev" data-prev-card="" onclick="moveCard(-1)">
+                    <i class="bi bi-caret-left"></i>
+                </div>
+                <div class="btn_next" data-next-card="" onclick="moveCard(1)">
+                    <i class="bi bi-caret-right"></i>
+                </div>
+            </div>
+             -->
         </section>
 
         <section class="section_viagem">
@@ -179,6 +273,7 @@
     
                             </div>
                         </div>
+                        
 
                         <div class="content_steps">
                             <div class="steps_mapa">
@@ -289,13 +384,144 @@
                         </div>
                         
                     </div>
+
+                    <div class="around_steps around_content_mobile owl-carousel owl-theme">
+
+                        <div class="item">
+                            <div class="steps_mapa">
+                                <img src="assets/img/mapa.png" alt="">
+                            </div>
+                            
+                            <div class="item_text">
+                                <header class="header_steps">
+                                    <h5>Passo 1</h5>
+                                    <h4>Buscando a viagem</h4>
+                                </header>
+    
+                                <p>A preservação ambiental em Bonito é levado a sério e por esse motivo é muito importante fazer o planejamento completo da sua viagem.</p>
+    
+                                <p>Todos os passeios em Bonito dependem de disponibilidade e reserva antecipada, além de possuir um limite máximo de pessoas para cada local. Por isso, a compra de cada passeio é feito com antecedência através das agências certificadas.</p>
+    
+                            </div>
+                        </div>
+                        
+
+                        <div class="item">
+                            <div class="steps_mapa">
+                                <img src="assets/img/mapa.png" alt="">
+                            </div>
+                            
+                            <div class="item_text">
+                                <header class="header_steps">
+                                    <h5>Passo 2</h5>
+                                    <h4>Buscando a viagem</h4>
+                                </header>
+    
+                                <p>A preservação ambiental em Bonito é levado a sério e por esse motivo é muito importante fazer o planejamento completo da sua viagem.</p>
+    
+                                <p>Todos os passeios em Bonito dependem de disponibilidade e reserva antecipada, além de possuir um limite máximo de pessoas para cada local. Por isso, a compra de cada passeio é feito com antecedência através das agências certificadas.</p>
+    
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="steps_mapa">
+                                <img src="assets/img/mapa.png" alt="">
+                            </div>
+                            
+                            <div class="item_text">
+                                <header class="header_steps">
+                                    <h5>Passo 3</h5>
+                                    <h4>Buscando a viagem</h4>
+                                </header>
+    
+                                <p>A preservação ambiental em Bonito é levado a sério e por esse motivo é muito importante fazer o planejamento completo da sua viagem.</p>
+    
+                                <p>Todos os passeios em Bonito dependem de disponibilidade e reserva antecipada, além de possuir um limite máximo de pessoas para cada local. Por isso, a compra de cada passeio é feito com antecedência através das agências certificadas.</p>
+    
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="steps_mapa">
+                                <img src="assets/img/mapa.png" alt="">
+                            </div>
+                            
+                            <div class="item_text">
+                                <header class="header_steps">
+                                    <h5>Passo 4</h5>
+                                    <h4>Buscando a viagem</h4>
+                                </header>
+    
+                                <p>A preservação ambiental em Bonito é levado a sério e por esse motivo é muito importante fazer o planejamento completo da sua viagem.</p>
+    
+                                <p>Todos os passeios em Bonito dependem de disponibilidade e reserva antecipada, além de possuir um limite máximo de pessoas para cada local. Por isso, a compra de cada passeio é feito com antecedência através das agências certificadas.</p>
+    
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="steps_mapa">
+                                <img src="assets/img/mapa.png" alt="">
+                            </div>
+                            
+                            <div class="item_text">
+                                <header class="header_steps">
+                                    <h5>Passo 5</h5>
+                                    <h4>Buscando a viagem</h4>
+                                </header>
+    
+                                <p>A preservação ambiental em Bonito é levado a sério e por esse motivo é muito importante fazer o planejamento completo da sua viagem.</p>
+    
+                                <p>Todos os passeios em Bonito dependem de disponibilidade e reserva antecipada, além de possuir um limite máximo de pessoas para cada local. Por isso, a compra de cada passeio é feito com antecedência através das agências certificadas.</p>
+    
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="steps_mapa">
+                                <img src="assets/img/mapa.png" alt="">
+                            </div>
+                            
+                            <div class="item_text">
+                                <header class="header_steps">
+                                    <h5>Passo 6</h5>
+                                    <h4>Buscando a viagem</h4>
+                                </header>
+    
+                                <p>A preservação ambiental em Bonito é levado a sério e por esse motivo é muito importante fazer o planejamento completo da sua viagem.</p>
+    
+                                <p>Todos os passeios em Bonito dependem de disponibilidade e reserva antecipada, além de possuir um limite máximo de pessoas para cada local. Por isso, a compra de cada passeio é feito com antecedência através das agências certificadas.</p>
+    
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="steps_mapa">
+                                <img src="assets/img/mapa.png" alt="">
+                            </div>
+                            
+                            <div class="item_text">
+                                <header class="header_steps">
+                                    <h5>Passo 7</h5>
+                                    <h4>Buscando a viagem</h4>
+                                </header>
+    
+                                <p>A preservação ambiental em Bonito é levado a sério e por esse motivo é muito importante fazer o planejamento completo da sua viagem.</p>
+    
+                                <p>Todos os passeios em Bonito dependem de disponibilidade e reserva antecipada, além de possuir um limite máximo de pessoas para cada local. Por isso, a compra de cada passeio é feito com antecedência através das agências certificadas.</p>
+    
+                            </div>
+                        </div>
+                        
+                    </div>
                    
                 </div>
             </div>
         </section>
 
         <section class="section_form">
-            <div class="section_form_content container">
+            <div class="section_form_content container" id="roteiro">
                 <div class="section_form_info">
                     <header class="section_form_header">
                         <h3>Monte seu pacote conosco</h3>
@@ -334,13 +560,13 @@
                         <div class="form_row">
                             <div class="form_field">
                                 <label for="nome">Nome</label>
-                                <input type="text" name="nome" id="nome">
+                                <input type="text" name="nome" id="nome" required>
                             </div>
                         </div>
                         <div class="form_row">
                             <div class="form_field">
                                 <label for="email">E-mail</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" required>
                             </div>
                         </div>
                         <div class="form_row">
@@ -348,38 +574,38 @@
                                 <label for="pais">País</label>
                                 <div class="cod_country">
                                     <img src="assets/img/brasil_flag.png" alt="">
-                                    <input type="text" name="cod_pais" id="cod_pais" value="+55">
+                                    <input type="text" name="cod_pais" id="cod_pais" value="+55" required>
                                 </div>
                             </div>
                             <div class="form_field w-70">
                                 <label for="celular">Celular</label>
-                                <input type="text" name="celular" id="celular" maxlength="15"/>
+                                <input type="text" name="celular" id="celular" maxlength="15" required>
                             </div>
                         </div>
                         <div class="form_row">
-                            <div class="form_field w-50">
+                            <div class="form_field w-50 f-row-var f-one">
                                 <label for="checkin">Check-In</label>
-                                <input type="text" name="checkin" id="checkin">
+                                <input type="date" name="checkin" id="checkin" required>
                             </div>
-                            <div class="form_field w-50">
+                            <div class="form_field w-50 f-row-var f-two">
                                 <label for="checkout">Check-Out</label>
-                                <input type="text" name="checkout" id="checkout">
+                                <input type="date" name="checkout" id="checkout" required>
                             </div>
                         </div>
                         <div class="form_row">
                             <div class="form_field w-50">
                                 <label for="adultos">Adultos</label>
-                                <input type="text" name="adultos" id="adultos">
+                                <input type="text" name="adultos" id="adultos" required>
                             </div>
                             <div class="form_field w-50">
                                 <label for="criancas">Crianças</label>
-                                <input type="text" name="criancas" id="criancas">
+                                <input type="text" name="criancas" id="criancas" required>
                             </div>
                         </div>
                         <div class="form_row">
                             <div class="form_field">
                                 <label for="idade_criancas">Idade das Crianças</label>
-                                <input type="text" name="idade_criancas" id="idade_criancas">
+                                <input type="text" name="idade_criancas" id="idade_criancas" required>
                             </div>
                         </div>
                         <div class="form_row">
@@ -387,17 +613,33 @@
                             <div class="select_form_group">
                                 <p class="title_select">Quais são os passeios de interesse?</p>
                                 <div class="select_form_column">
-                                    <p><input type="checkbox" name="passeios" id="passeios" value="cachoeira">Cachoeira</p>
-                                    <p><input type="checkbox" name="passeios" id="passeios" value="mergulho">Mergulho</p>
-                                    <p><input type="checkbox" name="passeios" id="passeios" value="flutuação">Flutuação</p>
-                                    <p><input type="checkbox" name="passeios" id="passeios" value="balneario">Balneário</p>
+                                    <p>
+                                        <label for="passeios"><input type="checkbox" name="passeios" id="passeios" value="cachoeira">Cachoeira  </label>
+                                    </p>
+                                    <p>
+                                        <label for="mergulho"><input type="checkbox" name="passeios" id="mergulho" value="mergulho">Mergulho</label>
+                                    </p>
+                                    <p>
+                                        <label for="flutuacao"><input type="checkbox" name="passeios" id="flutuacao" value="flutuação">Flutuação</label>
+                                    </p>
+                                    <p>
+                                        <label for="balneario"><input type="checkbox" name="passeios" id="balneario" value="balneario">Balneário</label>
+                                    </p>
                                 </div>
 
                                 <div class="select_form_column">
-                                    <p><input type="checkbox" name="passeios" id="passeios" value="grutas">Grutas</p>
-                                    <p><input type="checkbox" name="passeios" id="passeios" value="aventura">Aventura</p>
-                                    <p><input type="checkbox" name="passeios" id="passeios" value="pantanal">Pantanal</p>
-                                    <p><input type="checkbox" name="passeios" id="passeios" value="urbano">Urbano</p>
+                                    <p>
+                                        <label for="grutas"><input type="checkbox" name="passeios" id="grutas" value="grutas">Grutas</label>
+                                    </p>
+                                    <p>
+                                        <label for="aventura"><input type="checkbox" name="passeios" id="aventura" value="aventura">Aventura</label>
+                                    </p>
+                                    <p>
+                                        <label for="pantanal"><input type="checkbox" name="passeios" id="pantanal" value="pantanal">Pantanal</label>
+                                    </p>
+                                    <p>
+                                        <label for="urbano"><input type="checkbox" name="passeios" id="urbano" value="urbano">Urbano</label>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -410,7 +652,7 @@
         </section>
 
         <section class="ssection_packs">
-            <div class="packs_content container">
+            <div class="packs_content container" id="reserve">
                 <section class="packs_values">
                     <header class="header_packs">
                         <h3>Conheça os nossos pacotes temáticos</h3>
@@ -559,12 +801,67 @@
             </div>
         </div>
     </footer>
-    
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/light.js"></script>    
+
+    <script>
+        $(document).ready(function(){
+            $(".content_imgs_box2.owl-carousel").owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true,
+                        margin: 20,
+                        loop: true
+                    }
+                }
+            });
+            
+            $(".imgs_right_mobile").owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true,
+                        margin: 20,
+                        loop: true
+                    },
+                    768:{
+                        items:2,
+                        nav:true,
+                        margin: 20,
+                        loop: true
+                    }
+                }
+            });
+
+            $(".around_content_mobile.owl-carousel").owlCarousel({
+                margin:10,
+                nav:true,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true,
+                        margin: 20
+                    }
+                }
+            });
+        });
+
+    </script>
     
 </body>
 </html>

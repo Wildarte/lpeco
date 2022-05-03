@@ -1,0 +1,110 @@
+
+.section_imgs_box2{
+    display: none;
+}
+
+.frame_modal{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, .9);
+    z-index: 100;
+}
+.frame_modal2 .card_active{
+    display: block!important;
+    flex-basis: unset;
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+    z-index: 1000;
+    position: relative;
+    opacity: 1;
+    cursor: unset;
+}
+.section_imgs_box2 .owl-carousel .owl-item img{
+    height: 95vh!important;
+    width: auto;
+    margin: auto;
+}
+/*
+.frame_modal .card_active button{
+    bottom: -50px;
+    cursor: unset;
+}
+*/
+.close_modal2{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+.control_modal_one{
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+}
+.control_modal_one .btn_prev, .control_modal_one .btn_next{
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.content_imgs_box2 .owl-nav button{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(10, 10, 10, .8)!important;
+    padding: 10px;
+}
+.content_imgs_box2 .owl-nav button.owl-prev{
+    left: 20px;
+}
+.content_imgs_box2 .owl-nav button.owl-next{
+    right: 20px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    font-size: 3em;
+    color: #fff;
+    padding: 5px 10px!important;
+}
+.content_imgs_box2 .owl-nav button span{
+    margin: auto;
+    display: flex;
+    align-content: center;
+}
+
+.imgs_right_mobile.owl-carousel .owl-nav button{
+    position: absolute;
+    top: 40%!important;
+}
+.imgs_right_mobile .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+.imgs_right_mobile.owl-carousel .owl-nav button.owl-next{
+    position: absolute!important;
+    top: 50%;
+    right: 20px;
+}
+
+@media(max-width: 768px){
+    .section_imgs_box2 .owl-carousel .owl-item img{
+        width: 90vw!important;
+        height: 100%!important;
+        margin: auto;
+    }
+}
